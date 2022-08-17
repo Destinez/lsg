@@ -69,6 +69,8 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
     <!-- OneTrust Cookies Consent Notice end -->
 
     </head>
+
+    
     <body>
         <!-- Google Tag Manager (noscript) -->
 <noscript>
@@ -103,40 +105,18 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                             <a class="navbar__link navbar__link--primary" href="people.html" target="" v-bind:class="primaryLinkClasses('/people')">
                                 Our Team
                             </a>
-                            <a class="navbar__link navbar__link--primary" href="insights.html" target="" v-bind:class="primaryLinkClasses('/insights')">
-                                Insights
-                            </a>
+                          
                     </div>
                 </div>
                 <div role="navigation" aria-label="main" class="navbar__right">
                     <div class="navbar__links">
                            
                         <div is="email-disclaimer-cta" inline-template="inline-template" v-bind:email="'scottmaccormack@dwt.com'">
-                            <button class="button contact-card__cta" v-on:click="toggleModal">BOOK A CONSULTATION</button>
+                            <button class="button contact-card__cta" v-on:click="toggleModal">BOOK A FREE CONSULTATION</button>
                         </div>
-                            <a class="navbar__link navbar__link--secondary" href="https://careers.dwt.com/" target="" v-bind:class="primaryLinkClasses('https://careers.dwt.com/')">
-                                Careers
-                            </a>
+                         
                     </div>
-                    <div class="navbar-search" v-bind:class="{'navbar-search--open': isSearchOpen}">
-                        <div class="navbar-search__container">
-                            <button v-bind:aria-expanded="isSearchOpen ? 'true' : 'false'" class="navbar__link--secondary" aria-label="Search" v-on:click="toggleSearch()">
-                                <span class="navbar__icon icon icon__search navbar__icon__search"></span>
-                            </button>
-                            <form class="searchbar navbar-search__searchbar" v-on:submit.prevent="toggleSearch();search()">
-                                <div class="searchbar__left">
-                                    <label class="visually-hidden" for="searchbar">Search</label>
-                                    <input id="searchbar" class="searchbar__input" v-model="query" type="search" ref="searchInput" />
-                                    <span class="searchbar__placeholder" v-if="query.length === 0">Search</span>
-                                </div>
-
-                                <button class="navbar__link--secondary" aria-label="Search" type="button" v-on:click="toggleSearch();clearSearch()">
-                                    <span aria-hidden="true" class="navbar__icon icon icon__close navbar__icon__search"></span>
-                                    <span class="visually-hidden">Toggle Search</span>
-                                </button>
-                            </form>
-                        </div>
-                    </div>
+                  
                     <div class="navbar__menu">
                         <button class="navbar__menu-button" v-bind:aria-expanded="isMenuOpen ? 'true' : 'false'" aria-label="Toggle Menu" v-on:click="toggleMenu()">
                             <span class="navbar__icon icon" v-bind:class="menuIconClasses"></span>
@@ -150,7 +130,7 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                 <div class="menu__links menu__links--primary">
                         <div class="menu__link-item menu__link-item--primary">
                             <a class="menu__link menu__link--primary" href="people.html" target="">
-                                People
+                                Our Team
                             </a>
                         </div>
                         <div class="menu__link-item menu__link-item--primary">
@@ -158,11 +138,7 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                                 Expertise
                             </a>
                         </div>
-                        <div class="menu__link-item menu__link-item--primary">
-                            <a class="menu__link menu__link--primary" href="insights.html" target="">
-                                Insights
-                            </a>
-                        </div>
+                    
                 </div>
                 <div class="menu__links menu__links--secondary">
                         <div class="menu__link-item menu__link-item--secondary">
@@ -171,29 +147,11 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                             </a>
                         </div>
                         <div is="email-disclaimer-cta" inline-template="inline-template" v-bind:email="'scottmaccormack@dwt.com'">
-                            <button class="button contact-card__cta" v-on:click="toggleModal">BOOK A CONSULTATION</button>
+                            <button class="button contact-card__cta" v-on:click="toggleModal">BOOK A FREE CONSULTATION</button>
                         </div>
-                        <div class="menu__link-item menu__link-item--secondary">
-                            <a class="menu__link menu__link--secondary" href="https://careers.dwt.com/" target="">
-                                Careers
-                            </a>
-                        </div>
+                       
                 </div>
-                <div class="menu__search">
-                    <form class="searchbar searchbar--dark" v-on:submit.prevent="search()">
-                        <div class="searchbar__left">
-                            <label class="visually-hidden" for="menu-search">Menu Search</label>
-                            <input id="menu-search" class="searchbar__input" v-model="query" type="search" />
-                            <span class="searchbar__placeholder" v-if="query.length === 0">Search</span>
-                        </div>
-                        <div class="searchbar__right">
-                            <button aria-label="Perform Search" class="searchbar__button">
-                                <span aria-hidden="true" class="searchbar__icon icon icon__search"></span>
-                                <span class="visually-hidden"> Perform Search </span>
-                            </button>
-                        </div>
-                    </form>
-                </div>
+             
             </div>
         </div>
         <div class="search" v-bind:class="searchClasses" v-tabbable="isSearchOpen"></div>
@@ -202,9 +160,14 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
 <!--startindex-->
 <div id="main-content"></div>
 <div><h1 class="contentTitle"></h1><div class="contentDescription"></div></div><div class="pattern-background">
-    <div class="pattern-background__gradient">
+    <div >
+        <video class="pattern-background__gradient" autoplay muted loop><source src="background.mp4"></video>
         <div class="pattern-background__pattern">
-            <div class="pattern-background__mask"></div>
+           
+            <div class="pattern-background__mask">
+
+               
+            </div>
         </div>
     </div>
 </div>
@@ -496,19 +459,15 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                 <div class="homepage-inquiry__footer" v-bind:class="{'homepage-inquiry__footer--initialized' : showFooter}">
                     <ul class="homepage-inquiry__footer-links">
                                 <li class="homepage-inquiry__footer-link-item">
-                                        <a href="gcp/legal-notices.html" class="homepage-inquiry__footer-link-item__link" target="_self">Legal notices</a>
+                                        <a href="about.html" class="homepage-inquiry__footer-link-item__link" target="_self">About</a>
                                 </li>
                                 <li class="homepage-inquiry__footer-link-item">
-                                        <a href="gcp/eeo.html" class="homepage-inquiry__footer-link-item__link" target="_self">EEO</a>
+                                        <a href="expertise.html" class="homepage-inquiry__footer-link-item__link" target="_self">Expertise</a>
                                 </li>
                                 <li class="homepage-inquiry__footer-link-item">
-                                        <a href="gcp/privacy-policy.html" class="homepage-inquiry__footer-link-item__link" target="_self">Privacy policy</a>
+                                        <a href="people.html" class="homepage-inquiry__footer-link-item__link" target="_self">Our team</a>
                                 </li>
-                    <li class="homepage-inquiry__footer-link-item">
-                        <!-- OneTrust Cookies Settings button start -->
-                        <button id="ot-sdk-btn" class="ot-sdk-show-settings" aria-label="Change Cookie Settings">Cookie Choices</button>
-                        <!-- OneTrust Cookies Settings button end -->
-                    </li>
+                   
                     </ul>
                     <ul class="homepage-inquiry__footer-links homepage-inquiry__footer-links--right">
                                 <li class="homepage-inquiry__footer-link-item">
