@@ -94,19 +94,25 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                     </a>
                 </div>
                 <div role="navigation" aria-label="main" class="navbar__center">
-                    <div class="navbar__links">
-                        <a class="navbar__link navbar__link--primary" href="about.html" target="" v-bind:class="primaryLinkClasses('/about')">
-                            About
-                        </a>
-                            <a class="navbar__link navbar__link--primary" href="expertise.html" target="" v-bind:class="primaryLinkClasses('/expertise')">
-                                Expertise
-                            </a>
+                     <div class="navbar__links">
+            <a class="navbar__link navbar__link--primary" href="about.html" target="" v-bind:class="primaryLinkClasses('/about')">
+                About
+            </a>
+                <a class="navbar__link navbar__link--primary" href="expertise.html" target="" v-bind:class="primaryLinkClasses('/expertise')">
+                    Expertise
+                </a>
 
-                            <a class="navbar__link navbar__link--primary" href="people.html" target="" v-bind:class="primaryLinkClasses('/people')">
-                                Our Team
-                            </a>
-                          
-                    </div>
+                <a class="navbar__link navbar__link--primary" href="people.html" target="" v-bind:class="primaryLinkClasses('/people')">
+                    Our Team
+                </a>
+                <a class="navbar__link navbar__link--primary" href="careers.html" target="" v-bind:class="primaryLinkClasses('/people')">
+                    Careers
+                </a>
+                <a class="navbar__link navbar__link--primary" href="gallery.html" target="" v-bind:class="primaryLinkClasses('/people')">
+                    Art Gallery
+                </a>
+              
+        </div>
                 </div>
                 <div role="navigation" aria-label="main" class="navbar__right">
                     <div class="navbar__links">
@@ -128,6 +134,12 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
         <div class="menu menu--navbar-above" v-cloak="v-cloak" v-bind:class="menuClasses" v-tabbable="isMenuOpen">
             <div class="menu__content">
                 <div class="menu__links menu__links--primary">
+                       
+                        <div class="menu__link-item menu__link-item--primary">
+                            <a class="menu__link menu__link--primary" href="about.html" target="">
+                               About
+                            </a>
+                        </div>
                         <div class="menu__link-item menu__link-item--primary">
                             <a class="menu__link menu__link--primary" href="people.html" target="">
                                 Our Team
@@ -138,22 +150,31 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                                 Expertise
                             </a>
                         </div>
-                    
-                </div>
-                <div class="menu__links menu__links--secondary">
-                        <div class="menu__link-item menu__link-item--secondary">
-                            <a class="menu__link menu__link--secondary" href="about.html" target="">
-                                About
+                        <div class="menu__link-item menu__link-item--primary">
+                            <a class="menu__link menu__link--primary" href="careers.html" target="">
+                                Careers
+                             </a>
+                        </div>
+                        <div class="menu__link-item menu__link-item--primary">
+                            <a class="menu__link menu__link--primary" href="gallery.html" target="">
+                                Art Gallery
                             </a>
+                        </div>
+                     
+                    </div>
+                    <div class="menu__links menu__links--secondary">
+                        <div class="menu__link-item menu__link-item--secondary">
+                            
                         </div>
                         <div is="email-disclaimer-cta" inline-template="inline-template" v-bind:email="'scottmaccormack@dwt.com'">
                             <button class="button contact-card__cta" v-on:click="toggleModal">BOOK A FREE CONSULTATION</button>
                         </div>
                        
                 </div>
-             
+                  
+                </div>
+               
             </div>
-        </div>
         <div class="search" v-bind:class="searchClasses" v-tabbable="isSearchOpen"></div>
     </div>
 </div>
@@ -162,7 +183,8 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                 <div role="main" class="">
                     
 <div class="navbar__page" v-tabbable="!isAnyMenuOpen">
-        <section class="page-hero " style="background-image: url('-/media/images/patterns/blue/blue_b.svg');">
+    
+        <section class="page-hero " style="background-image: url('-/media/images/build/patternbluealt.svg');">
                     <div class="page-hero__gradient page-hero__gradient--left"></div>
         <div class="page-hero__container">
             <div class="page-hero__left">
@@ -175,63 +197,164 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
         </div>
     </section>
 
-    <div class="container">
-        <div is="expertise" inline-template="inline-template">
-            <section class="section expertise">                
-                <div class="expertise__main">
-                        <div class="practices expertise__section">
-        <h2 class="expertise-title"></h2>
-        <ul>
-                <div is="expertise-item" inline-template="inline-template" id="0f0a016a89c944a895a949f0b86d7a60">
-                    <li class="expertise-item">                        
-                           
-                            <a class="link" href="commercial.html">
-                                <h2 class="expertise-item__header expertise-item__header--inactive" style="font-size: 30px; font-weight: 300;">COMMERCIAL &CORPORATE PRACTICE</h2>
-                            </a>
-                   
-                    </li>
-                </div>
-                <div is="expertise-item" inline-template="inline-template" id="df3b0c80e9284059b95529db15a94c62">
-                    <li class="expertise-item">                        
-                            <button class="expertise-item__container link" v-bind:aria-expanded="isExpanded ? 'true' : 'false'" v-on:click="parentSelect('true')">
-                                <h2 class="expertise-item__header expertise-item__header--inactive" v-bind:class="[isExpanded ? 'expertise-item__header--open' : 'expertise-item__header--closed']" style="font-size: 30px; font-weight: 300;"></h2>
-                            </button>
-                            <a class="link" href="debt.html">
-                                <h2 class="expertise-item__header expertise-item__header--inactive" style="font-size: 30px; font-weight: 300;">DEBT RECOVERY AND BANKING</h2>
-                            </a>
-                    </li>
-                </div>
-             
-              
-              
-        </ul>
+
+    <div is="general-content" inline-template tabs="[{&quot;index&quot;:0,&quot;label&quot;:&quot;About&quot;,&quot;key&quot;:&quot;about&quot;,&quot;TabsCount&quot;:4},{&quot;index&quot;:1,&quot;label&quot;:&quot;Leadership&quot;,&quot;key&quot;:&quot;leadership&quot;,&quot;TabsCount&quot;:4},{&quot;index&quot;:2,&quot;label&quot;:&quot;News&quot;,&quot;key&quot;:&quot;news&quot;,&quot;TabsCount&quot;:4},{&quot;index&quot;:3,&quot;label&quot;:&quot;Security&quot;,&quot;key&quot;:&quot;security&quot;,&quot;TabsCount&quot;:4}]">
+        <div class="general-content">
+    <div class="tabs">
+        <div class="tabs__waypoint" v-bind:class="{'tabs__waypoint--sticky': isStuck}"></div>
+        <div class="tabs__container" v-bind:class="{'tabs__container--sticky': isStuck, 'tabs--hide': !navbarState, 'tabs__container--hide': isAnyMenuOpen}">
+            <div class="tabs__container__menu">
+                  
+                <ul class="tabs__container__menu__tab-list" role="tablist">            
+<li class="tabs__container__menu__tab" v-bind:class="tabClasses('about')"  v-on:click="setTabAndRoute('about','0')">
+    <button 
+            v-bind:aria-selected="activeTabKey === 'about' ? 'true' : 'false'"
+            id="about-tab"
+            role="tab"
+            aria-posinset="0"
+            aria-setsize="4"
+            aria-label="About"
+            aria-controls="about-tabpanel"
+            ref="button-about">
+        <h2>
+            Libel and Meida Law
+        </h2>
+    </button>
+</li>
+
+<li class="tabs__container__menu__tab" v-bind:class="tabClasses('security')"  v-on:click="setTabAndRoute('security','3')">
+    <button 
+            v-bind:aria-selected="activeTabKey === 'security' ? 'true' : 'false'"
+            id="security-tab"
+            role="tab"
+            aria-posinset="3"
+            aria-setsize="4"
+            aria-label="Security"
+            aria-controls="security-tabpanel"
+            ref="button-security">
+        <h2>
+            Commercial and Corporate Practice
+        </h2>
+    </button>
+</li>              
+<li class="tabs__container__menu__tab" v-bind:class="tabClasses('news')"  v-on:click="setTabAndRoute('news','2')">
+    <button 
+            v-bind:aria-selected="activeTabKey === 'news' ? 'true' : 'false'"
+            id="news-tab"
+            role="tab"
+            aria-posinset="2"
+            aria-setsize="4"
+            aria-label="News"
+            aria-controls="news-tabpanel"
+            ref="button-news">
+        <h2>
+           Debt Recovery and Banking
+        </h2>
+    </button>
+</li>  
+<li class="tabs__container__menu__tab" v-bind:class="tabClasses('real estate')"  v-on:click="setTabAndRoute('real estate','2')">
+    <button 
+            v-bind:aria-selected="activeTabKey === 'real estate' ? 'true' : 'false'"
+            id="real-estate-tab"
+            role="tab"
+            aria-posinset="2"
+            aria-setsize="5"
+            aria-label="real estate"
+            aria-controls="real-estate-tabpanel"
+            ref="button-real estate">
+        <h2>
+           Real Estate
+        </h2>
+    </button>
+</li>  
+ 
+                <div class="tabs__filler">&nbsp;</div>
+                <hr class="tabs__container__underline" ref="underline" v-bind:style="underlineStyle" />                
+                </ul>
+            </div>
+        </div>
     </div>
 
-                        <div class="industries expertise__section">
-        <h2 class="expertise-title">Practices</h2>
-        <ul>
-            <div is="expertise-item" inline-template="inline-template" id="708a0e4871434c0691897a3dd0b4a079">
-                <li class="expertise-item">                        
-                     
-                          <a class="link" href="media.html">
-                            <h2 class="expertise-item__header expertise-item__header--inactive" style="font-size: 30px; font-weight: 300;">LIBEL AND MEDIA LAW</h2>
-                        </a>
-                       
-                </li>
-            </div>
-            <div is="expertise-item" inline-template="inline-template" id="c525a1200db54b1eb4e56a9c13d7aaac">
-                <li class="expertise-item">                        
-                        <a class="link" href="real-estate.html">
-                            <h2 class="expertise-item__header expertise-item__header--inactive" style="font-size: 30px; font-weight: 300;">REAL ESTATE</h2>
-                        </a>
-                </li>
-            </div>
+            <div class="container">
+                
+              
+                    <div class="tab-content" 
+         v-bind:class="{'tab-content--active': isActiveTab('about')}" 
+         v-tabbable="isActiveTab('about')" role="tabpanel" tabindex="0" id="about-tabpanel" aria-labelledby="about-tab">
+
+        
+
+        
+
+    <section class="section section--component">
+        <div class="videos_container">
+
+                  
+                    <div class="rich-text">
+                        <p>LSG Solicitors has a robust libel and media law practice. we have worked with divers range of clients inclusive of media houses and profered legal advice on libel cases. 
+                            we have developed a pragmatic and innovative approach to resolve the legal hitches of our clients. </p>
+                    </div>
+
+          
+            
+
+        </div>
+    </section>
+
+
+    </div>
+    <div class="tab-content" 
+         v-bind:class="{'tab-content--active': isActiveTab('security')}" 
+         v-tabbable="isActiveTab('security')" role="tabpanel" tabindex="0" id="security-tabpanel" aria-labelledby="security-tab">
+
+        
+
+            <section class="section section--component">
+        <div class="overview__rich-text">
+               
+
+                <div class="rich-text rich-text__abstract">
+                    <p>Andy Akorugo offers vast expertise to its client in commercial and corporate practice, through creative and innovative problem solving. Amdy Akporugo and Associates has a leading commercial and corporate practice that forms the bedrock of our offerings. we are reputed for high quality legal advice on a variety of matters that suits our clients business objectives.</p>
+                </div>
+
+        </div>
+    </section>
+   
+
+  
+
+    </div>
+
+
+                
+   
+    <div class="tab-content" 
+         v-bind:class="{'tab-content--active': isActiveTab('news')}" 
+         v-tabbable="isActiveTab('news')" role="tabpanel" tabindex="0" id="news-tabpanel" aria-labelledby="news-tab">
+        
+        <section class="section section--component">
+            <div class="rich-text rich-text__abstract">
+       <p>Andy Akporugo and Associates is versed in representing borrowers or lenders, project sponsors, and joint venture partners through liigation, arbitration or other alternative dispute resolution mechanism. we have a full range of understanding of our clients diverse needs and deploy diverse mechanisms in offering the best suited solution to their needs.
        
-        </ul>
+        </p>
+        </div>  
+        </section>
     </div>
 
-                </div>                
-            </section>
+    <div class="tab-content" 
+    v-bind:class="{'tab-content--active': isActiveTab('real estate')}" 
+    v-tabbable="isActiveTab('real estate')" role="tabpanel" tabindex="0" id="real-estate-tabpanel" aria-labelledby="real-estate-tab">
+   
+   <section class="section section--component">
+       <div class="rich-text rich-text__abstract">
+  <p>LSG solicitor's real estate practice is known for providing high-quality legal services on diverse transactions including finance, mortgages, trusts, regulatory compliance and estate planning. LSG incorporates an in-depth understanding of proper risk allocation and mitigation measures for each project.
+   </p>
+   </div>  
+   </section>
+</div>
+
+  
+            </div>
         </div>
     </div>
 </div>

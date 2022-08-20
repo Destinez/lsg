@@ -93,19 +93,25 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                     </a>
                 </div>
                 <div role="navigation" aria-label="main" class="navbar__center">
-                    <div class="navbar__links">
-                        <a class="navbar__link navbar__link--primary" href="about.html" target="" v-bind:class="primaryLinkClasses('/about')">
-                            About
-                        </a>
-                            <a class="navbar__link navbar__link--primary" href="expertise.html" target="" v-bind:class="primaryLinkClasses('/expertise')">
-                                Expertise
-                            </a>
+                     <div class="navbar__links">
+            <a class="navbar__link navbar__link--primary" href="about.html" target="" v-bind:class="primaryLinkClasses('/about')">
+                About
+            </a>
+                <a class="navbar__link navbar__link--primary" href="expertise.html" target="" v-bind:class="primaryLinkClasses('/expertise')">
+                    Expertise
+                </a>
 
-                            <a class="navbar__link navbar__link--primary" href="people.html" target="" v-bind:class="primaryLinkClasses('/people')">
-                                Our Team
-                            </a>
-                          
-                    </div>
+                <a class="navbar__link navbar__link--primary" href="people.html" target="" v-bind:class="primaryLinkClasses('/people')">
+                    Our Team
+                </a>
+                <a class="navbar__link navbar__link--primary" href="careers.html" target="" v-bind:class="primaryLinkClasses('/people')">
+                    Careers
+                </a>
+                <a class="navbar__link navbar__link--primary" href="gallery.html" target="" v-bind:class="primaryLinkClasses('/people')">
+                    Art Gallery
+                </a>
+              
+        </div>
                 </div>
                 <div role="navigation" aria-label="main" class="navbar__right">
                     <div class="navbar__links">
@@ -124,9 +130,15 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                 </div>
             </div>
         </header>
-        <div class="menu menu--navbar-above" v-cloak="v-cloak" v-bind:class="menuClasses" v-tabbable="isMenuOpen">
+      <div class="menu menu--navbar-above" v-cloak="v-cloak" v-bind:class="menuClasses" v-tabbable="isMenuOpen">
             <div class="menu__content">
                 <div class="menu__links menu__links--primary">
+                       
+                        <div class="menu__link-item menu__link-item--primary">
+                            <a class="menu__link menu__link--primary" href="about.html" target="">
+                               About
+                            </a>
+                        </div>
                         <div class="menu__link-item menu__link-item--primary">
                             <a class="menu__link menu__link--primary" href="people.html" target="">
                                 Our Team
@@ -137,22 +149,31 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                                 Expertise
                             </a>
                         </div>
-                    
-                </div>
-                <div class="menu__links menu__links--secondary">
-                        <div class="menu__link-item menu__link-item--secondary">
-                            <a class="menu__link menu__link--secondary" href="about.html" target="">
-                                About
+                        <div class="menu__link-item menu__link-item--primary">
+                            <a class="menu__link menu__link--primary" href="careers.html" target="">
+                                Careers
+                             </a>
+                        </div>
+                        <div class="menu__link-item menu__link-item--primary">
+                            <a class="menu__link menu__link--primary" href="gallery.html" target="">
+                                Art Gallery
                             </a>
+                        </div>
+                     
+                    </div>
+                    <div class="menu__links menu__links--secondary">
+                        <div class="menu__link-item menu__link-item--secondary">
+                            
                         </div>
                         <div is="email-disclaimer-cta" inline-template="inline-template" v-bind:email="'scottmaccormack@dwt.com'">
                             <button class="button contact-card__cta" v-on:click="toggleModal">BOOK A FREE CONSULTATION</button>
                         </div>
                        
                 </div>
-             
+                  
+                </div>
+               
             </div>
-        </div>
         <div class="search" v-bind:class="searchClasses" v-tabbable="isSearchOpen"></div>
     </div>
 </div>
