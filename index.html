@@ -222,23 +222,28 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                                 <span class="minimal-dropdown__placeholder" aria-hidden="true">&nbsp;</span>
                                 <div class="minimal-dropdown__options"
                                      v-bind:class="{ active: showDropdown }"
-                                     v-cloak="v-cloak">
+                                     v-cloak="v-cloak" style="">
                                     <button class="minimal-dropdown__option homepage-inquiry__option"
                                            >
-                                        a person
+                                         Committed to Excellence
+                                          
                                     </button>
                                     <button class="minimal-dropdown__option homepage-inquiry__option"
-                                            v-on:click="openService('a practice/industry')"
-                                            v-show="!isActivePanel(panels.service)"
+                                           
                                             aria-label="I&#39;m looking for a practice or industry">
-                                        a practice/industry
+                                            Setting a Standard
+                                            
                                     </button>
+
                                     <button class="minimal-dropdown__option homepage-inquiry__option"
-                                            v-on:click="openOther('something else')"
-                                            v-show="!isActivePanel(panels.other)"
-                                            aria-label="I&#39;m looking for something else">
-                                        something else 
-                                    </button>
+                                    v-on:click="openService('Our Firm')"
+                                    v-show="!isActivePanel(panels.service)"
+                                    aria-label="I&#39;m looking for a practice or industry">
+                                   Our Firm
+                                    
+                            </button>
+                                  
+                                   
                                 </div>
                             </div>
                         </div>
