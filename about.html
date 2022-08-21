@@ -114,8 +114,8 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
     <div role="navigation" aria-label="main" class="navbar__right">
         <div class="navbar__links">
                
-            <div is="email-disclaimer-cta" inline-template="inline-template" v-bind:email="'scottmaccormack@dwt.com'">
-                <button class="button contact-card__cta" v-on:click="toggleModal">BOOK A FREE CONSULTATION</button>
+            <div is="email-disclaimer-cta" inline-template="inline-template" >
+                <button class="button contact-card__cta" ><a href="contact.html">BOOK A FREE CONSULTATION</a></button>
             </div>
              
         </div>
@@ -163,9 +163,9 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                         <div class="menu__link-item menu__link-item--secondary">
                             
                         </div>
-                        <div is="email-disclaimer-cta" inline-template="inline-template" v-bind:email="'scottmaccormack@dwt.com'">
-                            <button class="button contact-card__cta" v-on:click="toggleModal">BOOK A FREE CONSULTATION</button>
-                        </div>
+                      <div is="email-disclaimer-cta" inline-template="inline-template" >
+                <button class="button contact-card__cta" ><a href="contact.html">BOOK A FREE CONSULTATION</a></button>
+            </div>
                        
                 </div>
                   
@@ -195,7 +195,7 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
     </section>
 
 
-    <div is="general-content" inline-template tabs="[{&quot;index&quot;:0,&quot;label&quot;:&quot;About&quot;,&quot;key&quot;:&quot;about&quot;,&quot;TabsCount&quot;:4},{&quot;index&quot;:1,&quot;label&quot;:&quot;Leadership&quot;,&quot;key&quot;:&quot;leadership&quot;,&quot;TabsCount&quot;:4},{&quot;index&quot;:2,&quot;label&quot;:&quot;News&quot;,&quot;key&quot;:&quot;news&quot;,&quot;TabsCount&quot;:4},{&quot;index&quot;:3,&quot;label&quot;:&quot;Security&quot;,&quot;key&quot;:&quot;security&quot;,&quot;TabsCount&quot;:4}]">
+    <div is="general-content" inline-template tabs="[{&quot;index&quot;:0,&quot;label&quot;:&quot;About&quot;,&quot;key&quot;:&quot;about&quot;,&quot;TabsCount&quot;:4},{&quot;index&quot;:1,&quot;label&quot;:&quot;Leadership&quot;,&quot;key&quot;:&quot;leadership&quot;,&quot;TabsCount&quot;:4},{&quot;index&quot;:2,&quot;label&quot;:&quot;Values&quot;,&quot;key&quot;:&quot;Values&quot;,&quot;TabsCount&quot;:4},{&quot;index&quot;:3,&quot;label&quot;:&quot;PracticeAreas&quot;,&quot;key&quot;:&quot;PracticeAreas&quot;,&quot;TabsCount&quot;:4}]">
         <div class="general-content">
     <div class="tabs">
         <div class="tabs__waypoint" v-bind:class="{'tabs__waypoint--sticky': isStuck}"></div>
@@ -219,31 +219,31 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
     </button>
 </li>
 
-<li class="tabs__container__menu__tab" v-bind:class="tabClasses('security')"  v-on:click="setTabAndRoute('security','3')">
+<li class="tabs__container__menu__tab" v-bind:class="tabClasses('PracticeAreas')"  v-on:click="setTabAndRoute('PracticeAreas','3')">
     <button 
-            v-bind:aria-selected="activeTabKey === 'security' ? 'true' : 'false'"
-            id="security-tab"
+            v-bind:aria-selected="activeTabKey === 'PracticeAreas' ? 'true' : 'false'"
+            id="PracticeAreas-tab"
             role="tab"
             aria-posinset="3"
             aria-setsize="4"
-            aria-label="Security"
-            aria-controls="security-tabpanel"
-            ref="button-security">
+            aria-label="PracticeAreas"
+            aria-controls="PracticeAreas-tabpanel1"
+            ref="button-PracticeAreas">
         <h2>
-            Practice Areas
+            Practice Areas 
         </h2>
     </button>
 </li>              
-<li class="tabs__container__menu__tab" v-bind:class="tabClasses('news')"  v-on:click="setTabAndRoute('news','2')">
+<li class="tabs__container__menu__tab" v-bind:class="tabClasses('Values')"  v-on:click="setTabAndRoute('Values','2')">
     <button 
-            v-bind:aria-selected="activeTabKey === 'news' ? 'true' : 'false'"
-            id="news-tab"
+            v-bind:aria-selected="activeTabKey === 'Values' ? 'true' : 'false'"
+            id="Values-tab"
             role="tab"
             aria-posinset="2"
             aria-setsize="4"
-            aria-label="News"
-            aria-controls="news-tabpanel"
-            ref="button-news">
+            aria-label="Values"
+            aria-controls="Values-tabpanel"
+            ref="button-Values">
         <h2>
             Our Values
         </h2>
@@ -292,8 +292,8 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
 
     </div>
     <div class="tab-content" 
-         v-bind:class="{'tab-content--active': isActiveTab('security')}" 
-         v-tabbable="isActiveTab('security')" role="tabpanel" tabindex="0" id="security-tabpanel" aria-labelledby="security-tab">
+         v-bind:class="{'tab-content--active': isActiveTab('PracticeAreas')}" 
+         v-tabbable="isActiveTab('PracticeAreas')" role="tabpanel" tabindex="0" id="PracticeAreas-tabpanel" aria-labelledby="PracticeAreas-tab">
 
         
 
@@ -319,8 +319,8 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                 
    
     <div class="tab-content" 
-         v-bind:class="{'tab-content--active': isActiveTab('news')}" 
-         v-tabbable="isActiveTab('news')" role="tabpanel" tabindex="0" id="news-tabpanel" aria-labelledby="news-tab">
+         v-bind:class="{'tab-content--active': isActiveTab('Values')}" 
+         v-tabbable="isActiveTab('Values')" role="tabpanel" tabindex="0" id="Values-tabpanel" aria-labelledby="Values-tab">
         
         <section class="section section--component">
             <div class="rich-text rich-text__abstract">

@@ -123,9 +123,9 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                 <div role="navigation" aria-label="main" class="navbar__right">
                     <div class="navbar__links">
                            
-                        <div is="email-disclaimer-cta" inline-template="inline-template" v-bind:email="'scottmaccormack@dwt.com'">
-                            <button class="button contact-card__cta" v-on:click="toggleModal">BOOK A FREE CONSULTATION</button>
-                        </div>
+                      <div is="email-disclaimer-cta" inline-template="inline-template" >
+                <button class="button contact-card__cta" ><a href="contact.html">BOOK A FREE CONSULTATION</a></button>
+            </div>
                          
                     </div>
                   
@@ -172,9 +172,9 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                         <div class="menu__link-item menu__link-item--secondary">
                             
                         </div>
-                        <div is="email-disclaimer-cta" inline-template="inline-template" v-bind:email="'scottmaccormack@dwt.com'">
-                            <button class="button contact-card__cta" v-on:click="toggleModal">BOOK A FREE CONSULTATION</button>
-                        </div>
+                      <div is="email-disclaimer-cta" inline-template="inline-template" >
+                <button class="button contact-card__cta" ><a href="contact.html">BOOK A FREE CONSULTATION</a></button>
+            </div>
                        
                 </div>
                   
@@ -224,9 +224,7 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                                      v-bind:class="{ active: showDropdown }"
                                      v-cloak="v-cloak">
                                     <button class="minimal-dropdown__option homepage-inquiry__option"
-                                            v-on:click="openPeople('a person')"
-                                            v-show="!isActivePanel(panels.people)"
-                                            aria-label="I&#39;m looking for a person">
+                                           >
                                         a person
                                     </button>
                                     <button class="minimal-dropdown__option homepage-inquiry__option"
