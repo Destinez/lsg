@@ -453,29 +453,6 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
         </div>
     </transition>
 </div>
-<div is="email-disclaimer" inline-template>
-    <transition name="fade">
-        <div class="modal" v-if="disclaimerState.openModal" v-cloak>
-            <div class="modal__inner">
-                <span v-on:click="close">
-                    <span aria-hidden="true" class="modal__close icon icon__close"></span>
-                    <span class="visually-hidden">Close</span>
-                </span>                
-                <div class="modal__inner__text rich-text rich-text--blue">
-                    <p>CAUTION - Before you proceed, please note: By clicking &ldquo;accept&rdquo; you agree that our review of the information contained in your e-mail and any attachments will not create an attorney-client relationship, and will not prevent any lawyer in our firm from representing a party in any matter where that information is relevant, even if you submitted the information in good faith to retain us. </p>
-                </div>   
-                <div>
-                    <button class="button" v-on:click="accept">
-                        I Accept
-                    </button>
-                    <button class="button" v-on:click="close">
-                        I Decline
-                    </button>
-                </div>
-            </div>
-        </div>
-    </transition>
-</div>
 
         </div>
             <script src="assets/public/bundlecb92.js?v=i67Qduss1tU2MfyuM1jKUA=="></script>
